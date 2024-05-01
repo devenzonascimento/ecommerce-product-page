@@ -7,13 +7,13 @@ const ArrowNavCarousel = ({ image, handleArrowSwitch }) => {
         className="previous-icon carousel-icon"
         onClick={() => handleArrowSwitch("prev")}
       >
-        <img src="src/assets/icon-previous.svg" alt="" />
+        <img src="assets/icon-previous.svg" alt="" />
       </button>
       <button
         className="next-icon carousel-icon"
         onClick={() => handleArrowSwitch("next")}
       >
-        <img src="src/assets/icon-next.svg" alt="" />
+        <img src="assets/icon-next.svg" alt="" />
       </button>
     </div>
   );

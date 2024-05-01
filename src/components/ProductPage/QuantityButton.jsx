@@ -10,13 +10,13 @@ const QuantityButton = () => {
   return (
     <button className="quantity-button">
       <img
-        src="src/assets/icon-minus.svg"
+        src="assets/icon-minus.svg"
         alt="minus icon"
         onClick={() => dispatch({ type: "decrement" })}
       />
       <span className="quantity">{state.counter}</span>
       <img
-        src="src/assets/icon-plus.svg"
+        src="assets/icon-plus.svg"
         alt="plus icon"
         onClick={() => dispatch({ type: "increment" })}
       />

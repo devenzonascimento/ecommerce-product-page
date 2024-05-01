@@ -15,7 +15,7 @@ const CarouselModal = ({
       <div className="modal-overlay">
         <dialog className="modal-container">
           <button className="close-button" onClick={handleToggleCarouselModal}>
-            <img src="src/assets/icon-close.svg" alt="close icon" />
+            <img src="assets/icon-close.svg" alt="close icon" />
           </button>
           <ArrowNavCarousel
             image={image}

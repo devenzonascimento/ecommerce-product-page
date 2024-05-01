@@ -15,7 +15,7 @@ const AddToCartButton = () => {
         handleOpenCartModal()
       }
     }}>
-      <img src="src/assets/icon-cart.svg" alt="cart icon" />
+      <img src="assets/icon-cart.svg" alt="cart icon" />
       Add to cart
     </button>
   );

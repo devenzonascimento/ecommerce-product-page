@@ -19,7 +19,7 @@ const BasketItem = ({ basketProduct, listIndex }) => {
       </div>
 
       <img
-        src="src/assets/icon-delete.svg"
+        src="assets/icon-delete.svg"
         alt="delete icon"
         className="delete-icon"
         onClick={() => handleRemoveProduct(listIndex)}

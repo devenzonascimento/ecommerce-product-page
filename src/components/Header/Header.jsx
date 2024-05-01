@@ -24,19 +24,19 @@ const Header = () => {
   return (
     <header className="header-container">
       <img
-        src="src/assets/icon-menu.svg"
+        src="assets/icon-menu.svg"
         alt="menu icon"
         className="menu-icon"
         onClick={handleOpenMenu}
       />
-      <img src="src/assets/logo.svg" alt="sneakers logo" className="logo" />
+      <img src="assets/logo.svg" alt="sneakers logo" className="logo" />
       <Nav isOpenMenu={isOpenMenu} handleOpenMenu={handleOpenMenu} />
       <button
         className="shop-cart-button"
         quantity={quantityProductsInCard || ""}
       >
         <img
-          src="src/assets/icon-cart.svg"
+          src="assets/icon-cart.svg"
           alt="cart icon"
           className="cart-icon"
           onClick={handleToggleCartModal}
@@ -47,7 +47,7 @@ const Header = () => {
         />
       </button>
       <img
-        src="src/assets/image-avatar.png"
+        src="assets/image-avatar.png"
         alt="avatar icon"
         className="avatar"
       />

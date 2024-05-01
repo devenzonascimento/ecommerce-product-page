@@ -14,8 +14,8 @@ const Nav = ({ isOpenMenu, handleOpenMenu }) => {
       onClick={handleOutsideClick}
     >
       <img
-        src="src/assets/icon-close.svg"
-        alt="menu icon"
+        src="assets/icon-close.svg"
+        alt="close icon"
         className="close-icon"
         onClick={handleOpenMenu}
       />

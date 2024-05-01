@@ -8,16 +8,16 @@ const id = 1;
 const storeProducts = {
   1: {
     images: [
-      "src/assets/image-product-1.jpg",
-      "src/assets/image-product-2.jpg",
-      "src/assets/image-product-3.jpg",
-      "src/assets/image-product-4.jpg",
+      "assets/image-product-1.jpg",
+      "assets/image-product-2.jpg",
+      "assets/image-product-3.jpg",
+      "assets/image-product-4.jpg",
     ],
     thumbnails: [
-      "src/assets/image-product-1-thumbnail.jpg",
-      "src/assets/image-product-2-thumbnail.jpg",
-      "src/assets/image-product-3-thumbnail.jpg",
-      "src/assets/image-product-4-thumbnail.jpg",
+      "assets/image-product-1-thumbnail.jpg",
+      "assets/image-product-2-thumbnail.jpg",
+      "assets/image-product-3-thumbnail.jpg",
+      "assets/image-product-4-thumbnail.jpg",
     ],
     brand: "Sneaker Company",
     name: "Fall Limited Edition Sneakers",
@@ -28,16 +28,16 @@ const storeProducts = {
   },
   2: {
     images: [
-      "src/assets/image-product-3.jpg",
-      "src/assets/image-product-1.jpg",
-      "src/assets/image-product-4.jpg",
-      "src/assets/image-product-2.jpg",
+      "assets/image-product-3.jpg",
+      "assets/image-product-1.jpg",
+      "assets/image-product-4.jpg",
+      "assets/image-product-2.jpg",
     ],
     thumbnails: [
-      "src/assets/image-product-3-thumbnail.jpg",
-      "src/assets/image-product-1-thumbnail.jpg",
-      "src/assets/image-product-4-thumbnail.jpg",
-      "src/assets/image-product-2-thumbnail.jpg",
+      "assets/image-product-3-thumbnail.jpg",
+      "assets/image-product-1-thumbnail.jpg",
+      "assets/image-product-4-thumbnail.jpg",
+      "assets/image-product-2-thumbnail.jpg",
     ],
     brand: "Sneaker Company",
     name: "Produto Teste 2 ",
@@ -48,16 +48,16 @@ const storeProducts = {
   },
   3: {
     images: [
-      "src/assets/image-product-2.jpg",
-      "src/assets/image-product-3.jpg",
-      "src/assets/image-product-1.jpg",
-      "src/assets/image-product-4.jpg",
+      "assets/image-product-2.jpg",
+      "assets/image-product-3.jpg",
+      "assets/image-product-1.jpg",
+      "assets/image-product-4.jpg",
     ],
     thumbnails: [
-      "src/assets/image-product-2-thumbnail.jpg",
-      "src/assets/image-product-3-thumbnail.jpg",
-      "src/assets/image-product-1-thumbnail.jpg",
-      "src/assets/image-product-4-thumbnail.jpg",
+      "assets/image-product-2-thumbnail.jpg",
+      "assets/image-product-3-thumbnail.jpg",
+      "assets/image-product-1-thumbnail.jpg",
+      "assets/image-product-4-thumbnail.jpg",
     ],
     brand: "Sneaker Company",
     name: "Produto Teste 3",
@@ -167,7 +167,7 @@ export const useProductCartContext = () => {
 const [basketProducts, setBasketProducts] = useState([
   {
       requestID: 0,
-      thumbnail: "src/assets/image-product-1-thumbnail.jpg",
+      thumbnail: "assets/image-product-1-thumbnail.jpg",
       id: 0,
       name: "Fall Limited Edition Sneakers 2 ",
       value: 125.0,
@@ -175,7 +175,7 @@ const [basketProducts, setBasketProducts] = useState([
     },
     {
       requestID: 1,
-      thumbnail: "src/assets/image-product-1-thumbnail.jpg",
+      thumbnail: "assets/image-product-1-thumbnail.jpg",
       id: 1,
       name: "Fall Limited Edition Sneakers 2 ",
       value: 125.1,
@@ -183,7 +183,7 @@ const [basketProducts, setBasketProducts] = useState([
     },
     {
       requestID: 2,
-      thumbnail: "src/assets/image-product-1-thumbnail.jpg",
+      thumbnail: "assets/image-product-1-thumbnail.jpg",
       id: 2,
       name: "Fall Limited Edition Sneakers 2 ",
       value: 125.2,
@@ -191,7 +191,7 @@ const [basketProducts, setBasketProducts] = useState([
     },
     {
       requestID: 3,
-      thumbnail: "src/assets/image-product-1-thumbnail.jpg",
+      thumbnail: "assets/image-product-1-thumbnail.jpg",
       id: 3,
       name: "Fall Limited Edition Sneakers 2 ",
       value: 125.3,
@@ -199,7 +199,7 @@ const [basketProducts, setBasketProducts] = useState([
     },
     {
       requestID: 4,
-      thumbnail: "src/assets/image-product-1-thumbnail.jpg",
+      thumbnail: "assets/image-product-1-thumbnail.jpg",
       id: 4,
       name: "Fall Limited Edition Sneakers 2 ",
       value: 125.4,
@@ -207,7 +207,7 @@ const [basketProducts, setBasketProducts] = useState([
     },
     {
       requestID: 5,
-      thumbnail: "src/assets/image-product-1-thumbnail.jpg",
+      thumbnail: "assets/image-product-1-thumbnail.jpg",
       id: 5,
       name: "Fall Limited Edition Sneakers 2 ",
       value: 125.5,
