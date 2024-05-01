@@ -2,25 +2,25 @@ import { useContext } from "react";
 
 import { ProductCartContext } from "../../context/ProductsCardContext";
 
-
 const QuantityButton = () => {
-
-  const {state, dispatch} = useContext(ProductCartContext)
+  const { state, dispatch } = useContext(ProductCartContext);
 
   return (
-    <button className="quantity-button">
-      <img
-        src="assets/icon-minus.svg"
-        alt="minus icon"
+    <div className="quantity-container">
+      <button
+        className="quantity-button"
         onClick={() => dispatch({ type: "decrement" })}
-      />
+      >
+        <img src="assets/icon-minus.svg" alt="minus icon" />
+      </button>
       <span className="quantity">{state.counter}</span>
-      <img
-        src="assets/icon-plus.svg"
-        alt="plus icon"
+      <button
+        className="quantity-button"
         onClick={() => dispatch({ type: "increment" })}
-      />
-    </button>
+      >
+        <img src="assets/icon-plus.svg" alt="plus icon" />
+      </button>
+    </div>
   );
 };
 

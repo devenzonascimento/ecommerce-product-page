@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { ProductCartContext } from "../../context/ProductsCardContext";
+import useCarouselImage from "../../hooks/useCarouselImage";
 
 import ProductDescription from "./ProductDescription";
 import AddToCartButton from "./AddToCartButton";
@@ -7,10 +8,9 @@ import ProductPrice from "./ProductPrice";
 import QuantityButton from "./QuantityButton";
 import ArrowNavCarousel from "./ArrowNavCarousel";
 import ThumbNavCarousel from "./ThumbNavCarousel";
+import CarouselModal from "./CarouselModal";
 
 import "./style.scss";
-import CarouselModal from "./CarouselModal";
-import useCarouselImage from "../../hooks/useCarouselImage";
 
 const ProductPage = () => {
   const { storeProducts } = useContext(ProductCartContext);
@@ -32,7 +32,7 @@ const ProductPage = () => {
         />
       )}
       {document.body.offsetWidth >= 1024 && (
-        <div className="carousel-container">
+        <section className="carousel-container">
           <img
             src={image}
             alt={image}
@@ -43,17 +43,17 @@ const ProductPage = () => {
             thumbnails={thumbnails}
             handleThumbSwitch={handleThumbSwitch}
           />
-        </div>
+        </section>
       )}
 
-      <div className="description-container">
+      <section className="description-container">
         <ProductDescription productInfo={storeProducts[1]} />
         <ProductPrice productInfo={storeProducts[1]} />
         <div className="order-container">
           <QuantityButton />
           <AddToCartButton />
         </div>
-      </div>
+      </section>
 
       <CarouselModal
         modalIsOpen={modalIsOpen}

@@ -18,8 +18,8 @@
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
-                height: 45px;
-                width: 45px;
+                height: 60px;
+                width: 60px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -29,22 +29,34 @@
             }
 
             .previous-icon {
-                left: 1.5em;
+                left: 0.5em;
+                
+                img {
+                    height: 22px;
+                    width: 16px;
+                    margin-right: 4px;
+                }
             }
 
             .next-icon {
-                right: 1.5em;
+                right: 0.5em;
+
+                img {
+                    height: 22px;
+                    width: 16px;
+                    margin-left: 4px;
+                }
             }
         }
 
         .description-container {
             display: flex;
             flex-direction: column;
-            gap: 1em;
+            gap: 1.2em;
             padding: 1.5em;
 
             .product-brand {
-                font-size: 0.8em;
+                font-size: 0.85em;
                 font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 0.1em;
@@ -52,12 +64,12 @@
             }
 
             .product-name {
-                font-size: 1.8em;
+                font-size: 2em;
             }
 
             .product-description {
                 line-height: 1.4em;
-                font-size: 1em;
+                font-size: 1.1em;
                 color: var(--Dark-grayish-blue);
             }
 
@@ -97,21 +109,28 @@
                 justify-content: center;
                 gap: 1em;
 
-                .quantity-button {
+                .quantity-container {
                     width: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    padding: 1.5em;
+                    //padding: 1.5em;
                     background-color: var(--Light-grayish-blue);
                     border-radius: 10px;
+                    
+                    .quantity-button {
+                        background-color: transparent;                        
+                        padding: 1.85em;
 
-                    &>img {
-                        display: block;
-                        width: 15px;
+                        img {
+                            display: block;
+                            width: 20px;
+                        }
                     }
 
+
                     .quantity {
+                        color: black;
                         font-size: 1.4em;
                         font-weight: 700;
                     }
@@ -132,7 +151,7 @@
 
                     &>img {
                         display: block;
-                        width: 20px;
+                        width: 25px;
                         filter: brightness(5);
                     }
                 }
@@ -396,18 +415,22 @@
                 justify-content: center;
                 gap: 1em;
 
-                .quantity-button {
+                .quantity-container {
                     width: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    padding: 1.5em;
                     background-color: var(--Light-grayish-blue);
                     border-radius: 10px;
+                    
+                    .quantity-button {
+                        padding: 1.5em;
+                        background-color: transparent;                        
 
-                    &>img {
-                        display: block;
-                        width: 15px;
+                        img {
+                            display: block;
+                            width: 20px;
+                        }
                     }
 
                     .quantity {
@@ -431,7 +454,7 @@
 
                     &>img {
                         display: block;
-                        width: 20px;
+                        width: 25px;
                         filter: brightness(5);
                     }
                 }
@@ -730,23 +753,28 @@
                 justify-content: center;
                 gap: 1em;
 
-                .quantity-button {
-                    width: 35%;
+                .quantity-container {
+                    width: 40%;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    padding: 1em;
                     background-color: var(--Light-grayish-blue);
                     border-radius: 10px;
+                    
+                    .quantity-button {
+                        padding: 1.5em;
+                        background-color: transparent;
 
-                    &>img {
-                        display: block;
-                        width: 18px;
-
-                        &:hover {
-                            cursor: pointer;
+                        img {
+                            display: block;
+                            width: 15px;
+    
+                            &:hover {
+                                cursor: pointer;
+                            }
                         }
                     }
+
 
                     .quantity {
                         font-size: 1.2em;
@@ -755,7 +783,7 @@
                 }
 
                 .add-to-card-button {
-                    width: 65%;
+                    width: 60%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
